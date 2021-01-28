@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Práctica de Básicos javascript</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="operaciones">
+        <div class="wrapper-suma">
+            <h1 class="titulo-suma" >Suma</h1>
+            <div class="suma">
+                <input id="n1" type="number">
+                <h2>+</h2>
+                <input id="n2" type="number">
+                <h3> = </h3>
+                <h3 id="res-suma" type="number"> 0 </h3>
+
+            </div>
+            <div class="botonera-suma">
+                <button id="calcular-suma" type="button" onclick="resultSuma()"> Calcular </button>
+                <button id="borrar-suma" type="button" onclick="borrarSumas()"> Borrar </button>
+                <script type="text/javascript" src="app.js"></script>
+            </div>
+        </div>
+        <div class="wrapper-resta">
+            <h1 class="titulo-resta" >Resta</h1>
+            <div class="resta">
+                <input id="n3" type="number">
+                <h2>-</h2>
+                <input id="n4" type="number">
+                <h3> = </h3>
+                <h3 id="res-resta" type="number">0</h3>
+
+            </div>
+            <div class="botonera-resta">
+                <button id="calcular-resta" type="button" onclick="resultResta()"> Calcular </button>
+                <button id="borrar-resta" type="button" onclick="borrarResta()"> Borrar </button>
+             
+            </div>
+        </div>
+        <div class="wrapper-multi">
+            <h1 class="titulo-multi" >Multiplicación</h1>
+            <div class="multi">
+                <input id="n5" type="number">
+                <h2>×</h2>
+                <input id="n6" type="number">
+                <h3> = </h3>
+                <h3 id="res-multi" type="number">0</h3>
+
+            </div>
+            <div class="botonera-multi">
+                <button id="calcular-multi" type="button" onclick="resultMulti()"> Calcular </button>
+                <button id="borrar-multi" type="button" onclick="borrarMulti()"> Borrar </button>
+             
+            </div>
+        </div>
+        <div class="wrapper-divi">
+            <h1 class="titulo-divi" >División</h1>
+            <div class="divi">
+                <input id="n7" type="number">
+                <h2>÷</h2>
+                <input id="n8" type="number">
+                <h3> = </h3>
+                <h3 id="res-divi" type="number">0</h3>
+
+            </div>
+            <div class="botonera-divi">
+                <button id="calcular-divi" type="button" onclick="resultDivi()"> Calcular </button>
+                <button id="borrar-divi" type="button" onclick="borrarDivi()"> Borrar </button>
+             
+            </div>
+        </div>
+
+    </div>
+    <script type="text/javascript" src="app.js"></script>
+</body>
+
+</html>

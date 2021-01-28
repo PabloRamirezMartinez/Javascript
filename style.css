@@ -1,0 +1,169 @@
+/* con esta linea eliminamos el estilo por default de HTML */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/*  Asignamos una fuente y el color de esta a todo el texto presente en el cuerpo de la página */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+/* Asignamos un estilo básico a todos los botones de la página */
+button {
+    justify-content: center;
+    width: 70px;
+    height: 30px;
+    border-radius: 15px;
+    border: 1px solid white;
+    margin: 15px;
+    cursor: pointer;
+    
+}
+/* Asignamos un estilo a las casillas de entrada de número de la página */
+input{
+    border: 1px solid white;
+    border-radius: 5px;
+    line-height: 25px;
+    width: 90px;
+}
+
+/* A nuestro wrapper principal le asignamos display:grid y lo dividimos en 2 filas de dos columnas cada una.
+y una altura del 100% del viewport */
+.operaciones {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+}
+.wrapper-suma {
+    display: flex;
+    flex-direction: column;
+    grid-row: 1;
+    grid-column: 1;
+    background: lightcoral;
+    padding: 30px;
+}
+
+.suma {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-left: 65px;
+}
+
+.suma h2 {
+   margin: 10px;
+}
+.suma h3 {
+    margin: 10px;
+ }
+
+.botonera-suma {
+    display: flex;
+    justify-content: center;
+
+}
+
+.wrapper-resta {
+    display: flex;
+    flex-direction: column;
+    grid-row: 1;
+    grid-column: 2;
+    background: lightskyblue;
+    padding: 30px;
+}
+
+.resta {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-left: 65px;
+}
+
+.resta h2 {
+   margin: 10px;
+}
+.resta h3 {
+    margin: 10px;
+ }
+
+.botonera-resta {
+    display: flex;
+    justify-content: center;
+}
+.wrapper-multi {
+    display: flex;
+    flex-direction: column;
+    grid-row: 2;
+    grid-column: 1;
+    background: lightgreen;
+    padding: 30px;
+}
+
+.multi {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-left: 65px;
+}
+
+.multi h2 {
+   margin: 10px;
+}
+.multi h3 {
+    margin: 10px;
+ }
+
+.botonera-multi {
+    display: flex;
+    justify-content: center;
+   
+}
+.wrapper-divi {
+    display: flex;
+    flex-direction: column;
+    grid-row: 2;
+    grid-column: 2;
+    background: rgb(187, 136, 255);
+    padding: 30px;
+}
+
+.divi {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-left: 65px;
+}
+
+.divi h2 {
+   margin: 10px;
+}
+.divi h3 {
+    margin: 10px;
+ }
+
+.botonera-divi {
+    display: flex;
+    justify-content: center;
+   
+}
+
+/* Asignamos una media Query para dispositivos con anchura máxima de 800px, y en el, cambiamos el tipo de
+display de nuestro contenedor principal de grid a flex y este con orientacion en columnas. */
+@media (max-width: 800px){
+    .operaciones {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        height: max-content;
+    }
+
+}
